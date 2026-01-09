@@ -205,27 +205,23 @@
       font-size: 0.92rem;
     }
   </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GX8QSZTJH6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GX8QSZTJH6');
+  </script>
 </head>
 
 <body>
   <div class="wrap">
-    <!-- Top navigation -->
-    <!-- <div class="topbar"> -->
-      <!-- <div class="site-title">Yunzhen Yao</div> -->
-      <!-- <div class="nav" aria-label="Primary navigation"> -->
-        <!-- <a href="#about">About</a> -->
-        <!-- <a href="#news">News</a> -->
-        <!-- <a href="#publications">Publications</a> -->
-      <!-- </div> -->
-    <!-- </div> -->
-
     <!-- Header / Hero -->
     <div class="hero" id="about">
       <div class="avatar" aria-label="Profile photo">
-        <!-- Option A (recommended): put a file named avatar.jpg in your repo root and uncomment below -->
         <img src="avatar.jpg" alt="Yunzhen Yao" />
-        <!-- Option B: placeholder -->
-        <!-- <span class="small">avatar</span> -->
       </div>
 
       <div>
@@ -235,12 +231,35 @@
         </p>
 
         <div class="linkrow">
-          <!-- Replace # with your real links -->
-          <a href="https://scholar.google.com/citations?user=Ga00jcIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://github.com/implicitvalue" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/yunzhen-yao-18a87a347" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://dblp.org/pid/284/0567.html" target="_blank" rel="noopener">DBLP</a>
-          <a href="https://www.dropbox.com/scl/fi/69alnk06eenydeb179i33/CV_Yunzhen_Yao.pdf?rlkey=2lpg60lr3rsuq41v5f7s9yvh6&st=9tiv2dyy&dl=0">CV</a>
+          <a href="https://scholar.google.com/citations?user=Ga00jcIAAAAJ&hl=en"
+             target="_blank" rel="noopener"
+             data-ga="scholar" data-title="Google Scholar">
+            Google Scholar
+          </a>
+
+          <a href="https://github.com/implicitvalue"
+             target="_blank" rel="noopener"
+             data-ga="github" data-title="GitHub Profile">
+            GitHub
+          </a>
+
+          <a href="https://www.linkedin.com/in/yunzhen-yao-18a87a347"
+             target="_blank" rel="noopener"
+             data-ga="linkedin" data-title="LinkedIn">
+            LinkedIn
+          </a>
+
+          <a href="https://dblp.org/pid/284/0567.html"
+             target="_blank" rel="noopener"
+             data-ga="dblp" data-title="DBLP">
+            DBLP
+          </a>
+
+          <a href="https://www.dropbox.com/scl/fi/69alnk06eenydeb179i33/CV_Yunzhen_Yao.pdf?rlkey=2lpg60lr3rsuq41v5f7s9yvh6&st=9tiv2dyy&dl=0"
+             target="_blank" rel="noopener"
+             data-ga="cv" data-title="CV (Dropbox PDF)">
+            CV
+          </a>
         </div>
 
         <div class="email">
@@ -252,98 +271,120 @@
 
     <div>
       <section class="research">
-          <p>
-              I am a fourth-year PhD student at <a href="https://www.epfl.ch/en/" target="_blank" rel="noopener">EPFL</a>, advised by
-              Prof. <a href="https://ic-people.epfl.ch/~gastpar/" target="_blank" rel="noopener">Michael Gastpar</a>. 
-          </p>
-          <p>
-            My research focuses on the <strong>theoretical foundations and practical methods</strong> for building
-            <strong>reliable, trustworthy, and efficient</strong> machine learning systems, with an emphasis on
-            <strong>uncertainty quantification</strong> and <strong>robust decision-making</strong>.
-          </p>
+        <p>
+          I am a fourth-year PhD student at
+          <a href="https://www.epfl.ch/en/"
+             target="_blank" rel="noopener"
+             data-ga="affiliation" data-title="EPFL">
+            EPFL
+          </a>, advised by
+          Prof.
+          <a href="https://ic-people.epfl.ch/~gastpar/"
+             target="_blank" rel="noopener"
+             data-ga="person" data-title="Michael Gastpar (advisor)">
+            Michael Gastpar
+          </a>.
+        </p>
 
-          <ul>
-            <li>Inference-time adaptation for large language models (LLMs)</li>
-            <li>Uncertainty quantification for machine learning systems, including conformal prediction</li>
-            <li>Preference learning and LLM alignment</li>
-            <li>Finite-sample and non-asymptotic analysis of learning algorithms</li>
-          </ul>
+        <p>
+          My research focuses on the <strong>theoretical foundations and practical methods</strong> for building
+          <strong>reliable, trustworthy, and efficient</strong> machine learning systems, with an emphasis on
+          <strong>uncertainty quantification</strong> and <strong>robust decision-making</strong>.
+        </p>
+
+        <ul>
+          <li>Inference-time adaptation for large language models (LLMs)</li>
+          <li>Uncertainty quantification for machine learning systems, including conformal prediction</li>
+          <li>Preference learning and LLM alignment</li>
+          <li>Finite-sample and non-asymptotic analysis of learning algorithms</li>
+        </ul>
       </section>
     </div>
 
     <!-- Publications -->
     <section id="publications">
       <h2>Publications</h2>
-        <ul class="pub">
-          <li>
-            <div class="pub-title">
-              <a href="https://arxiv.org/abs/2510.07093" target="_blank" rel="noopener">
-                Non-Asymptotic Analysis of Efficiency in Conformalized Regression
-              </a>
-            </div>
-            <div class="pub-meta">
-              <em>Yunzhen Yao</em>, Lie He, Michael Gastpar · Preprint
-            </div>
-          </li>
 
-          <li>
-            <div class="pub-title">
-              <a href="https://arxiv.org/abs/2506.01084" target="_blank" rel="noopener">
-                zip2zip: Inference-Time Adaptive Vocabularies for Language Models via Token Compression
-              </a>
-            </div>
-            <div class="pub-meta">
-              Saibo Geng*, Nathan Ranchin*, <em>Yunzhen Yao</em>, Maxime Peyrard,
-              Chris Wendler, Michael Gastpar, Robert West · NeurIPS 2025
-            </div>
-          </li>
+      <ul class="pub">
+        <li>
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2510.07093"
+               target="_blank" rel="noopener"
+               data-ga="publication" data-title="Non-Asymptotic Analysis of Efficiency in Conformalized Regression (arXiv)">
+              Non-Asymptotic Analysis of Efficiency in Conformalized Regression
+            </a>
+          </div>
+          <div class="pub-meta">
+            <em>Yunzhen Yao</em>, Lie He, Michael Gastpar · Preprint
+          </div>
+        </li>
 
-          <li>
-            <div class="pub-title">
-              <a href="https://arxiv.org/abs/2501.18282" target="_blank" rel="noopener">
-                Leveraging Sparsity for Sample-Efficient Preference Learning: A Theoretical Perspective
-              </a>
-            </div>
-            <div class="pub-meta">
-              <em>Yunzhen Yao</em>, Lie He, Michael Gastpar · ICML 2025
-            </div>
-          </li>
+        <li>
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2506.01084"
+               target="_blank" rel="noopener"
+               data-ga="publication" data-title="zip2zip (arXiv)">
+              zip2zip: Inference-Time Adaptive Vocabularies for Language Models via Token Compression
+            </a>
+          </div>
+          <div class="pub-meta">
+            Saibo Geng*, Nathan Ranchin*, <em>Yunzhen Yao</em>, Maxime Peyrard,
+            Chris Wendler, Michael Gastpar, Robert West · NeurIPS 2025
+          </div>
+        </li>
 
-          <li>
-            <div class="pub-title">
-              <a href="https://www.jmlr.org/papers/volume25/22-0816/22-0816.pdf" target="_blank" rel="noopener">
-                Unlabeled Principal Component Analysis and Matrix Completion
-              </a>
-            </div>
-            <div class="pub-meta">
-              <em>Yunzhen Yao</em>, Liangzu Peng, Manolis Tsakiris · JMLR 2024
-            </div>
-          </li>
+        <li>
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2501.18282"
+               target="_blank" rel="noopener"
+               data-ga="publication" data-title="Leveraging Sparsity for Sample-Efficient Preference Learning (arXiv)">
+              Leveraging Sparsity for Sample-Efficient Preference Learning: A Theoretical Perspective
+            </a>
+          </div>
+          <div class="pub-meta">
+            <em>Yunzhen Yao</em>, Lie He, Michael Gastpar · ICML 2025
+          </div>
+        </li>
 
-          <li>
-            <div class="pub-title">
-              <a href="https://proceedings.neurips.cc/paper/2021/hash/ff8c1a3bd0c441439a0a081e560c85fc-Abstract.html"
-                target="_blank" rel="noopener">
-                Unlabeled Principal Component Analysis
-              </a>
-            </div>
-            <div class="pub-meta">
-              <em>Yunzhen Yao</em>, Liangzu Peng, Manolis Tsakiris · NeurIPS 2021
-            </div>
-          </li>
+        <li>
+          <div class="pub-title">
+            <a href="https://www.jmlr.org/papers/volume25/22-0816/22-0816.pdf"
+               target="_blank" rel="noopener"
+               data-ga="publication" data-title="Unlabeled Principal Component Analysis and Matrix Completion (JMLR PDF)">
+              Unlabeled Principal Component Analysis and Matrix Completion
+            </a>
+          </div>
+          <div class="pub-meta">
+            <em>Yunzhen Yao</em>, Liangzu Peng, Manolis Tsakiris · JMLR 2024
+          </div>
+        </li>
 
-          <li>
-            <div class="pub-title">
-              <a href="https://ieeexplore.ieee.org/document/9517881/authors#authors"
-                target="_blank" rel="noopener">
-                Unsigned Matrix Completion
-              </a>
-            </div>
-            <div class="pub-meta">
-              <em>Yunzhen Yao</em>, Liangzu Peng, Manolis Tsakiris · ISIT 2021
-            </div>
-          </li>
-        </ol>
+        <li>
+          <div class="pub-title">
+            <a href="https://proceedings.neurips.cc/paper/2021/hash/ff8c1a3bd0c441439a0a081e560c85fc-Abstract.html"
+               target="_blank" rel="noopener"
+               data-ga="publication" data-title="Unlabeled Principal Component Analysis (NeurIPS 2021)">
+              Unlabeled Principal Component Analysis
+            </a>
+          </div>
+          <div class="pub-meta">
+            <em>Yunzhen Yao</em>, Liangzu Peng, Manolis Tsakiris · NeurIPS 2021
+          </div>
+        </li>
+
+        <li>
+          <div class="pub-title">
+            <a href="https://ieeexplore.ieee.org/document/9517881/authors#authors"
+               target="_blank" rel="noopener"
+               data-ga="publication" data-title="Unsigned Matrix Completion (ISIT 2021)">
+              Unsigned Matrix Completion
+            </a>
+          </div>
+          <div class="pub-meta">
+            <em>Yunzhen Yao</em>, Liangzu Peng, Manolis Tsakiris · ISIT 2021
+          </div>
+        </li>
+      </ul>
     </section>
 
     <footer>
@@ -353,5 +394,27 @@
       </script>
     </footer>
   </div>
+
+  <!-- GA4 click tracking (place before </body>) -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("a[data-ga]").forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (typeof gtag !== "function") return;
+
+        const category = link.getAttribute("data-ga") || "";
+        const title = link.getAttribute("data-title") || link.textContent.trim();
+        const href = link.getAttribute("href") || "";
+
+        gtag("event", "link_click", {
+          event_category: category,
+          event_label: title,
+          link_url: href,
+          outbound: /^https?:\/\//i.test(href) ? 1 : 0
+        });
+      });
+    });
+  });
+  </script>
 </body>
 </html>
